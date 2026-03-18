@@ -247,6 +247,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Call to Action (CTA) Section */}
+      <section className="bg-neutral-50 dark:bg-neutral-900/40 py-24 px-8 text-center border-t border-neutral-200 dark:border-neutral-800">
+        <div className="max-w-3xl mx-auto space-y-6">
+          <h2 className="text-4xl lg:text-5xl font-light tracking-tight text-neutral-900 dark:text-white">
+            Got a Vision? Let's Bring It to Life!
+          </h2>
+          <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed max-w-2xl mx-auto">
+            I'm always excited to collaborate on new and innovative projects. Whether you're 
+            starting from scratch or refining an existing idea.
+          </p>
+          <div className="pt-6">
+            <Link 
+              href="mailto:raihan.rosidi354n@gmail.com" 
+              className="text-sm font-medium border-b border-neutral-900 dark:border-white pb-1 hover:text-neutral-500 dark:hover:text-neutral-300 transition-colors inline-flex items-center gap-1"
+            >
+              Book A Call
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Footer Section */}
+      <footer className="bg-neutral-900 dark:bg-black text-white py-16 px-8 lg:px-12 border-t border-neutral-800 relative overflow-hidden">
+        
+        {/* Decorative subtle grid lines (to match the reference image) */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute left-[20%] top-0 bottom-0 border-l border-white/5"></div>
+          <div className="absolute right-[20%] top-0 bottom-0 border-r border-white/5"></div>
+          <div className="absolute top-1/2 left-0 right-0 border-t border-white/5"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-10 relative z-10">
+          
+          {/* Navigation Links */}
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 lg:gap-8 text-sm font-medium text-neutral-400">
+            <Link 
+              href="/" 
+              className="bg-neutral-800 text-white px-6 py-2.5 rounded-full hover:bg-neutral-700 transition-colors"
+            >
+              Home
+            </Link>
+            <Link href="#about" className="hover:text-white transition-colors">About Me</Link>
+            <Link href="#portfolio" className="hover:text-white transition-colors">Portfolio</Link>
+            <Link href="#services" className="hover:text-white transition-colors">Services</Link>
+            <Link href="#blog" className="hover:text-white transition-colors">Blog</Link>
+          </div>
+
+          {/* Large Email Address */}
+          <div>
+            <Link 
+              href="mailto:raihan.rosidi354n@gmail.com" 
+              className="text-4xl lg:text-5xl font-light tracking-tight hover:opacity-80 transition-opacity"
+            >
+              EMAIL
+            </Link>
+          </div>
+          
+        </div>
+      </footer>
+
     </div>
   );
 }
