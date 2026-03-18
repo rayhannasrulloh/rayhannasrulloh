@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { projects } from '@/data/projects';
+import FadeIn from '@/components/FadeIn';
 
 export default function Home() {
   return (
@@ -39,25 +40,32 @@ export default function Home() {
           </div>
 
           {/* Stats Section */}
-          <div className="flex gap-12 mb-16 lg:mb-24">
-            <div>
-              <p className="text-3xl lg:text-4xl font-light">+5</p>
-              <p className="text-xs text-neutral-500 mt-2">Projects completed</p>
+          <FadeIn delay={0.2}>
+            <div className="flex gap-12 mb-16 lg:mb-24">
+              <div>
+                <p className="text-3xl lg:text-4xl font-light">+5</p>
+                <p className="text-xs text-neutral-500 mt-2">Projects completed</p>
+              </div>
+              <div>
+                <p className="text-3xl lg:text-4xl font-light">100%</p>
+                <p className="text-xs text-neutral-500 mt-2">Always learning</p>
+              </div>
             </div>
-            <div>
-              <p className="text-3xl lg:text-4xl font-light">100%</p>
-              <p className="text-xs text-neutral-500 mt-2">Always learning</p>
-            </div>
-          </div>
+          </FadeIn>
 
           {/* Main Greeting */}
-          <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-light tracking-tighter leading-none mb-6">
-            Hello
-          </h1>
-          <p className="text-lg text-neutral-600 dark:text-neutral-400 flex items-center gap-3">
-            <span className="w-8 h-[1px] bg-neutral-400"></span> 
-            It's Rayhan a CS student & dev
-          </p>
+          <FadeIn delay={0.4}>
+            <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-light tracking-tighter leading-none mb-6">
+              Hello
+            </h1>
+          </FadeIn>
+
+          <FadeIn delay={0.6}>
+            <p className="text-lg text-neutral-600 dark:text-neutral-400 flex items-center gap-3">
+              <span className="w-8 h-[1px] bg-neutral-400"></span> 
+              It's Rayhan a CS student & dev
+            </p>
+          </FadeIn>
 
           {/* Scroll Down Indicator */}
           <div className="absolute bottom-8 lg:bottom-12 left-12 lg:left-24 xl:left-32">
@@ -73,14 +81,16 @@ export default function Home() {
         </div>
 
         {/* Right Side: Image Placeholder */}
-        <div className="relative w-full lg:w-1/2 h-[50vh] lg:h-screen bg-neutral-100 dark:bg-neutral-950">
-          <Image
-            src="/profile.png"
-            alt="Rayhan Roshidi Nasrulloh Portrait"
-            fill
-            className="object-cover object-center grayscale"
-            priority
-          />
+        <div className="relative w-full lg:w-1/2 h-[50vh] lg:h-screen bg-neutral-100 dark:bg-neutral-950 overflow-hidden">
+          <FadeIn delay={0.3} direction="left">
+            <Image
+              src="/profile.png"
+              alt="Rayhan Portrait"
+              fill
+              className="object-cover object-center grayscale"
+              priority
+            />
+          </FadeIn>
         </div>
 
       </section>
@@ -90,6 +100,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 items-start">
           
           {/* Column 1: Title & Intro */}
+          <FadeIn delay={0.1}>
           <div className="space-y-6 relative">
             <h2 className="text-4xl lg:text-5xl font-light tracking-tight text-neutral-900 dark:text-white">
               About Me
@@ -109,8 +120,10 @@ export default function Home() {
               </svg>
             </div>
           </div>
+          </FadeIn>
 
           {/* Column 2: Highlight Card */}
+          <FadeIn delay={0.3}>
           <div className="bg-white dark:bg-neutral-900 rounded-2xl p-6 lg:p-8 shadow-sm border border-neutral-100 dark:border-neutral-800 flex flex-col gap-6">
             <div className="w-12 h-12 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-900 dark:text-white">
               {/* Globe Icon */}
@@ -138,8 +151,10 @@ export default function Home() {
               />
             </div>
           </div>
+          </FadeIn>
 
           {/* Column 3: Details & Points */}
+          <FadeIn delay={0.5}>
           <div className="flex flex-col gap-12 lg:pl-8">
             {/* Small Top Image with Link/Arrow */}
             <div className="relative w-32 h-42 rounded-xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 group cursor-pointer">
@@ -190,14 +205,18 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </FadeIn>
 
         </div>
       </section>
 
       {/* Projects Section */}
       <section id="portfolio" className="max-w-7xl mx-auto w-full px-8 py-24 space-y-12">
+        <FadeIn delay={0.1}>
         <h2 className="text-3xl font-light tracking-tight">Selected Work</h2>
+        </FadeIn>
         
+        <FadeIn delay={0.3}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div 
@@ -224,6 +243,7 @@ export default function Home() {
                 </div>
               </div>
               
+              
               <div className="flex gap-4 pt-8 mt-auto">
                 <Link 
                   href={project.githubUrl} 
@@ -245,31 +265,34 @@ export default function Home() {
             </div>
           ))}
         </div>
+        </FadeIn>
       </section>
 
       {/* Call to Action (CTA) Section */}
       <section className="bg-neutral-50 dark:bg-neutral-900/40 py-24 px-8 text-center border-t border-neutral-200 dark:border-neutral-800">
-        <div className="max-w-3xl mx-auto space-y-6">
-          <h2 className="text-4xl lg:text-5xl font-light tracking-tight text-neutral-900 dark:text-white">
-            Got a Vision? Let's Bring It to Life!
-          </h2>
-          <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed max-w-2xl mx-auto">
-            I'm always excited to collaborate on new and innovative projects. Whether you're 
-            starting from scratch or refining an existing idea.
-          </p>
-          <div className="pt-6">
-            <Link 
-              href="mailto:raihan.rosidi354n@gmail.com" 
-              className="text-sm font-medium border-b border-neutral-900 dark:border-white pb-1 hover:text-neutral-500 dark:hover:text-neutral-300 transition-colors inline-flex items-center gap-1"
-            >
-              Book A Call
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
-            </Link>
+        <FadeIn delay={0.3}>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <h2 className="text-4xl lg:text-5xl font-light tracking-tight text-neutral-900 dark:text-white">
+              Got a Vision? Let's Bring It to Life!
+            </h2>
+            <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed max-w-2xl mx-auto">
+              I'm always excited to collaborate on new and innovative projects. Whether you're 
+              starting from scratch or refining an existing idea.
+            </p>
+            <div className="pt-6">
+              <Link 
+                href="mailto:raihan.rosidi354n@gmail.com" 
+                className="text-sm font-medium border-b border-neutral-900 dark:border-white pb-1 hover:text-neutral-500 dark:hover:text-neutral-300 transition-colors inline-flex items-center gap-1"
+              >
+                Book A Call
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </Link>
+            </div>
           </div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Main Footer Section */}
