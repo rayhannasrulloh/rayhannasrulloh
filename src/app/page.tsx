@@ -85,6 +85,115 @@ export default function Home() {
 
       </section>
 
+      {/* About Me Section */}
+      <section id="about" className="bg-neutral-50 dark:bg-neutral-900/20 py-24 px-8 lg:px-12 border-b border-neutral-200 dark:border-neutral-800">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 items-start">
+          
+          {/* Column 1: Title & Intro */}
+          <div className="space-y-6 relative">
+            <h2 className="text-4xl lg:text-5xl font-light tracking-tight text-neutral-900 dark:text-white">
+              About Me
+            </h2>
+            <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed max-w-sm">
+              I specialize in turning complex logic into efficient, functional code. 
+              My approach blends a strong theoretical foundation with practical application, 
+              delivering software that not only runs well but solves real problems. 
+              Ready to collaborate?
+            </p>
+            
+            {/* Decorative Curved Arrow SVG */}
+            <div className="hidden lg:block absolute -right-8 bottom-0 text-neutral-200 dark:text-neutral-800">
+              <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M 20 80 Q 50 20 90 30" />
+                <path d="M 75 20 L 90 30 L 80 45" />
+              </svg>
+            </div>
+          </div>
+
+          {/* Column 2: Highlight Card */}
+          <div className="bg-white dark:bg-neutral-900 rounded-2xl p-6 lg:p-8 shadow-sm border border-neutral-100 dark:border-neutral-800 flex flex-col gap-6">
+            <div className="w-12 h-12 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-neutral-900 dark:text-white">
+              {/* Globe Icon */}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                <path d="M2 12h20"/>
+              </svg>
+            </div>
+            
+            <div>
+              <h3 className="text-6xl font-light tracking-tighter text-neutral-900 dark:text-white">100%</h3>
+              <p className="text-sm text-neutral-500 mt-4 leading-relaxed">
+                Dedication to continuous learning. While mastering computer science concepts 
+                requires persistence, my relentless curiosity drives me to constantly adapt and improve.
+              </p>
+            </div>
+
+            <div className="relative w-full h-64 mt-4 rounded-xl overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+              <Image
+                src="/about-card.jpg" 
+                alt="Portrait detail"
+                fill
+                className="object-cover grayscale"
+              />
+            </div>
+          </div>
+
+          {/* Column 3: Details & Points */}
+          <div className="flex flex-col gap-12 lg:pl-8">
+            {/* Small Top Image with Link/Arrow */}
+            <div className="relative w-32 h-42 rounded-xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 group cursor-pointer">
+              <Image
+                src="/about-small.jpg"
+                alt="Secondary portrait"
+                fill
+                className="object-cover grayscale transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-10 h-10 bg-white/90 dark:bg-neutral-900/90 rounded-full flex items-center justify-center backdrop-blur-sm">
+                  {/* Arrow Up Right Icon */}
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-900 dark:text-white">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* Bullet Points */}
+            <div className="space-y-8">
+              <div className="flex gap-4 items-start">
+                <div className="mt-1 flex-shrink-0 text-neutral-900 dark:text-white">
+                  {/* Star Icon */}
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l2.4 7.6H22l-6.2 4.5 2.4 7.6-6.2-4.5-6.2 4.5 2.4-7.6L2 9.6h7.6L12 2z"/>
+                  </svg>
+                </div>
+                <p className="text-sm text-neutral-500 leading-relaxed">
+                  Thriving in an international academic environment, I collaborate effectively 
+                  and communicate technical ideas clearly. I specialize in building logical, 
+                  user-focused applications.
+                </p>
+              </div>
+
+              <div className="flex gap-4 items-start">
+                <div className="mt-1 flex-shrink-0 text-neutral-900 dark:text-white">
+                  {/* Star Icon */}
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l2.4 7.6H22l-6.2 4.5 2.4 7.6-6.2-4.5-6.2 4.5 2.4-7.6L2 9.6h7.6L12 2z"/>
+                  </svg>
+                </div>
+                <p className="text-sm text-neutral-500 leading-relaxed">
+                  I enjoy working closely with peers and mentors, blending algorithmic 
+                  strategy with creative problem-solving to bring impactful software to life.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="portfolio" className="max-w-7xl mx-auto w-full px-8 py-24 space-y-12">
         <h2 className="text-3xl font-light tracking-tight">Selected Work</h2>
