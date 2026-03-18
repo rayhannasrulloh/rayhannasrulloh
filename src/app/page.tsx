@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { projects } from '@/data/projects';
 import FadeIn from '@/components/FadeIn';
+import AnimatedCounter from '@/components/AnimatedCounter';
 
 export default function Home() {
   return (
@@ -43,11 +44,15 @@ export default function Home() {
           <FadeIn delay={0.2}>
             <div className="flex gap-12 mb-16 lg:mb-24">
               <div>
-                <p className="text-3xl lg:text-4xl font-light">+5</p>
+                <p className="text-3xl lg:text-4xl font-light">
+                  <AnimatedCounter from={0} to={5} duration={2} prefix="+" />
+                </p>
                 <p className="text-xs text-neutral-500 mt-2">Projects completed</p>
               </div>
               <div>
-                <p className="text-3xl lg:text-4xl font-light">100%</p>
+                <p className="text-3xl lg:text-4xl font-light">
+                  <AnimatedCounter from={0} to={100} duration={2.5} suffix="%" />
+                </p>
                 <p className="text-xs text-neutral-500 mt-2">Always learning</p>
               </div>
             </div>
@@ -82,7 +87,7 @@ export default function Home() {
 
         {/* Right Side: Image Placeholder */}
         <div className="relative w-full lg:w-1/2 h-[50vh] lg:h-screen bg-neutral-100 dark:bg-neutral-950 overflow-hidden">
-          <FadeIn delay={0.3} direction="left">
+          <FadeIn delay={0.1}>
             <Image
               src="/profile.png"
               alt="Rayhan Portrait"
@@ -135,7 +140,9 @@ export default function Home() {
             </div>
             
             <div>
-              <h3 className="text-6xl font-light tracking-tighter text-neutral-900 dark:text-white">100%</h3>
+              <h3 className="text-6xl font-light tracking-tighter text-neutral-900 dark:text-white">
+                <AnimatedCounter from={0} to={100} duration={3} suffix="%" />
+              </h3>
               <p className="text-sm text-neutral-500 mt-4 leading-relaxed">
                 Dedication to continuous learning. While mastering computer science concepts 
                 requires persistence, my relentless curiosity drives me to constantly adapt and improve.
