@@ -21,7 +21,7 @@ export default function Home() {
           <Link href="#services" className="hover:text-neutral-500 transition-colors">Services</Link>
           <Link href="#blog" className="hover:text-neutral-500 transition-colors">Blog</Link>
         </div>
-        <Link href="mailto:your-email@example.com" className="text-sm font-medium border-b border-neutral-900 dark:border-neutral-50 pb-0.5 hover:text-neutral-500 transition-colors">
+        <Link href="mailto:raihan.rosidi354n@gmail.com" className="text-sm font-medium border-b border-neutral-900 dark:border-neutral-50 pb-0.5 hover:text-neutral-500 transition-colors">
           Book A Call ↗
         </Link>
       </nav>
@@ -56,7 +56,7 @@ export default function Home() {
           </h1>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 flex items-center gap-3">
             <span className="w-8 h-[1px] bg-neutral-400"></span> 
-            — It's Rayhan a CS student & dev
+            It's Rayhan a CS student & dev
           </p>
 
           {/* Scroll Down Indicator */}
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
 
         {/* Right Side: Image Placeholder */}
-        <div className="relative w-full lg:w-1/2 h-[50vh] lg:h-screen bg-neutral-100 dark:bg-neutral-900">
+        <div className="relative w-full lg:w-1/2 h-[50vh] lg:h-screen bg-neutral-100 dark:bg-neutral-950">
           <Image
             src="/profile.png"
             alt="Rayhan Roshidi Nasrulloh Portrait"
