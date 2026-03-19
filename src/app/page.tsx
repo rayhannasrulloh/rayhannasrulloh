@@ -87,15 +87,17 @@ export default function Home() {
 
         {/* Right Side: Image Placeholder */}
         <div className="relative w-full lg:w-1/2 h-[50vh] lg:h-screen bg-neutral-100 dark:bg-neutral-950 overflow-hidden">
-          <FadeIn delay={0.1}>
+          
+          <FadeIn delay={0.3} direction="left" className="relative w-full h-full">
             <Image
-              src="/profile.png"
+              src="/profile.png" 
               alt="Rayhan Portrait"
               fill
               className="object-cover object-center grayscale"
               priority
             />
           </FadeIn>
+          
         </div>
 
       </section>

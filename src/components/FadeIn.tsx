@@ -8,10 +8,15 @@ interface FadeInProps {
   children: ReactNode;
   delay?: number;
   direction?: "up" | "down" | "left" | "right";
+  className?: string;
 }
 
-export default function FadeIn({ children, delay = 0, direction = "up" }: FadeInProps) {
-  // Define the starting position based on the direction
+export default function FadeIn({ 
+  children, 
+  delay = 0, 
+  direction = "up",
+  className = ""
+}: FadeInProps) {
   const directionOffset = {
     up: 40,
     down: -40,
@@ -21,6 +26,7 @@ export default function FadeIn({ children, delay = 0, direction = "up" }: FadeIn
 
   return (
     <motion.div
+      className={className}
       initial={{ 
         opacity: 0, 
         y: direction === "up" || direction === "down" ? directionOffset[direction] : 0,
@@ -31,7 +37,7 @@ export default function FadeIn({ children, delay = 0, direction = "up" }: FadeIn
       transition={{ 
         duration: 0.7, 
         delay: delay, 
-        ease: [0.21, 0.47, 0.32, 0.98] // Custom easing for a premium feel
+        ease: [0.21, 0.47, 0.32, 0.98]
       }}
     >
       {children}
