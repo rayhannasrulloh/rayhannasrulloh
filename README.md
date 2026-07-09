@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rayhan R Nasrulloh
 
-## Getting Started
+I am a Computer Science student at President University Batch 2024. I’m a passionate Full-Stack Web Developer, AI/ML Enthusiast, and Creative Designer who loves breaking down complex logic and building impactful open-source projects. 
 
-First, run the development server:
+Currently navigating the tech world from Cikarang, Indonesia, while constantly pushing my limits to learn, build, and mentor others.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tech Stack & Skills
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### **Programming & Frameworks**
+*   **Frontend:** React, Next.js, Tailwind CSS, Framer Motion
+*   **Backend:** FastAPI, Laravel, Python, PHP, JavaScript, TypeScript
+*   **Database & BaaS:** Supabase, PostgreSQL, MySQL
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### **Artificial Intelligence & Machine Learning**
+*   **Core Focus:** Deep Learning, Natural Language Processing (NLP), Computer Vision
+*   **Tools & Integrations:** OpenRouter API (Llama models), YOLO (You Only Look Once), OpenAI Whisper
 
-## Learn More
+#### **Design & Creative Production**
+*   **Video Editing:** Adobe Premiere Pro (5+ years exp), DaVinci Resolve, Adobe After Effects
+*   **Graphic Design:** Adobe Photoshop, Illustrator
+*   **Hobbyist Tech:** Manga/Manhwa digital cleaning, typesetting, and automation scripts
 
-To learn more about Next.js, take a look at the following resources:
+#### **Environment & Tools**
+*   **Main OS:** Windows (Daily driver) & Arch Linux / Hyprland (Tiling WM/Wayland via USB boot)
+*   **VCS:** Git & GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Featured Projects
 
-## Deploy on Vercel
+*   **Echo Robot Prototype (Feb 2026):** An intelligent modular system integrating **YOLO** for vision, **Whisper** for audio processing, and **Llama 3.2** via OpenRouter for its cognitive reasoning module.
+*   **Personal Portfolio Site (Mar 2026):** A high-performance, modern developer portfolio built with **Next.js**, deployed on **Vercel**, featuring highly fluid smooth scrolling and **Framer Motion** animations.
+*   **Business Automation Tooling:** Built custom web-automation and data entry scripts to streamline operations for an LPG distribution business.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Leadership & Community Involvement
+
+*   **PU Developer Club** – *Vice Chairperson* 
+*   **PU Developer Club: DevPath** – *Frontend Mentor* (Conducted weekly interactive workshops via Discord to guide students into modern web ecosystems).
+*   **Wenedik (WND)** – *Co-Founder* (An apparel and clothing brand launched in late 2025/early 2026).
+
+---
+
+### Current Focus & Philosophy
+
+> "Always learning, always building." 
+
+Even when modern computer science concepts get tough, I believe in persistent learning and hands-on experimentation. When I'm not writing code or tweaking UI frames, you can find me practicing **calisthenics**, hitting the **gym**, or micro-managing lanes in **Dota 2**.
+
+---
+
+### Connect with Me
+
+*   **LinkedIn:** [Rayhan Roshidi Nasrulloh](https://www.linkedin.com/in/rayhan-roshidi-nasrulloh/)
+*   **Instagram:** [@rayhanrnsl](https://instagram.com/rayhanrnsl)
+*   **Location:** Bekasi Regency, West Java, Indonesia
